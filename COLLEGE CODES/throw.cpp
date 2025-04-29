@@ -2,26 +2,23 @@
 using namespace std;
 
 int main() {
-    int chance;
+    int number,d;
     cout << "Enter no of chances you wanna give " << endl;
-    cin >> chance;
+    cin >> number;
+    cout<<"the number you wanna divide it by "<<endl;
+    cin>>d;
+
 
     try {
-        if (chance == 1) {
-            throw 101;
-        } else if (chance == 2) {
-            throw 'x';
-        } else {
-            throw 789.9;
-        }
-    } catch (int y) {
-        cout << "this is a numerical expcetions  using value " << y << endl;
-    }
-    catch (char s) {
-        cout << "this is a character case exception" << endl;
-    }
-    catch (...) {
-        cout << "the last throw" << endl;
-    }
+        if (d==0) {
+         }
+         else{
+           cout<<"The number "<<number<<"divided by "<<d<<"is "<<(number/d)<<endl;
+
+             }}
+             catch(int a){
+               cout<<"this accured an error cause you trynna  div by 0"<<endl;
+               }
+
     return 0;
 }
